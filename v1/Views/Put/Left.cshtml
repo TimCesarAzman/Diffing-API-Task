@@ -1,0 +1,23 @@
+﻿@{
+    ViewBag.Title = "Left";
+}
+@*Ustvari besedilno območje za uvoz podatkov, nato pa podatke pošlje v PutController*@
+<h2>Left</h2>
+<h3>InPut JSON data</h3>
+<h3>@ViewBag.Ostvarjeno</h3>
+@using (Html.BeginForm())
+{
+    <textarea rows="4" cols="50" name="Lb">
+{ 
+
+}
+  </textarea>
+    <br>
+    <br>
+    <input type="submit" value="Submit">
+}
+
+
+
+
+

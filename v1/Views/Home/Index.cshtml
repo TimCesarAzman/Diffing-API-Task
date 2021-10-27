@@ -1,0 +1,42 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Home</h2>
+
+@using (Html.BeginForm())
+{
+    <table width="75%">
+    <tr>
+        <th>Data on the left</th>
+        <th colspan="50">Data on the right</th>
+    </tr>
+    <tr>
+        <td>
+            @*Gous to the txt file and displays all of the text in it*@
+            @foreach (string text in @System.IO.File.ReadAllLines(Server.MapPath("~/App_Data/dbLeft.txt")))
+            {
+                <h4>@text</h4>
+            }
+        </td>
+        <td>
+            @*Gous to the txt file and displays all of the text in it*@
+            @foreach (string text in @System.IO.File.ReadAllLines(Server.MapPath("~/App_Data/dbRight.txt")))
+            {
+                <h4>@text</h4>
+            }
+        </td>
+    </tr>
+    <tr>
+        <td>
+            @*At the press of the button it resets the txt file*@
+            <input name="a" type="submit" value="Reset text file">
+        </td>
+        <td>
+            @ViewBag.Reset
+        </td>
+    </tr>
+    </table>
+}
+    

@@ -1,0 +1,15 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<form>
+    @*Displays two options, input data to left or to the right. Then redirect you there.*@
+    <h3>InPut JSON data. Left or Right?</h3>
+    <button>@Html.ActionLink("Left", "Left", "Put")</button>
+    <button>@Html.ActionLink("Right", "Right", "Put")</button>
+</form>
+
+
+
