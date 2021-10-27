@@ -1,0 +1,12 @@
+Home
+-The home page displays the data that is stored right now. At the bottom you will be represented with the option of resetting stored data.
+InPut
+-By pressing InPut you will be presented with two options, left and right. By clicking on one of them you will be redirected to a new page.
+--A textarea will be presented to you, you input your data there. Then the program will take that data and stor it in the file thet you 
+  are writing in(If you are on the left then it will write to the left and the same for the right).If the import of data was successful the page will tell you that.
+OutPut
+-By clicking the output the page will look at the data and output the results.
+--First it will check if there is any data on the left and right. If one is empty it will output a 404 error.
+  Second, it checks if all of the data is equal. In that case it will tell you "Equal".
+  Third time it will count the number of data in each file. If the number doesn't match it will output the length of each one.
+  If any of the previous thing don't match it will output "SizeDoNotMatch" beacuse that is the only thing that is left.
